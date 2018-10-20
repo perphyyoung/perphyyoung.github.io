@@ -5,18 +5,18 @@
   
   <title>Hexo 常见问题 | py&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. GitHub 项目添加 README.md2. 添加 favicon.ico3. 在主页中只显示摘要4. 自定义部署到 GitHub 的 commit 信息5. 添加文章 tags6. 添加图片7. 博客站内链接跳转">
+  <meta name="description" content="1. GitHub 项目添加 README.md2. 添加 favicon.ico3. 在主页中只显示摘要4. 自定义部署到 GitHub 的 commit 信息5. 添加文章 tags6. 添加图片7. 博客站内链接跳转8. Hexo 大小写问题">
 <meta name="keywords" content="Hexo,blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 常见问题">
 <meta property="og:url" content="https://perphyyoung.github.io/2018/09/27/hexo-faq/index.html">
 <meta property="og:site_name" content="py&#39;s blog">
-<meta property="og:description" content="1. GitHub 项目添加 README.md2. 添加 favicon.ico3. 在主页中只显示摘要4. 自定义部署到 GitHub 的 commit 信息5. 添加文章 tags6. 添加图片7. 博客站内链接跳转">
+<meta property="og:description" content="1. GitHub 项目添加 README.md2. 添加 favicon.ico3. 在主页中只显示摘要4. 自定义部署到 GitHub 的 commit 信息5. 添加文章 tags6. 添加图片7. 博客站内链接跳转8. Hexo 大小写问题">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-27T12:20:08.543Z">
+<meta property="og:updated_time" content="2018-10-20T07:24:31.533Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 常见问题">
-<meta name="twitter:description" content="1. GitHub 项目添加 README.md2. 添加 favicon.ico3. 在主页中只显示摘要4. 自定义部署到 GitHub 的 commit 信息5. 添加文章 tags6. 添加图片7. 博客站内链接跳转">
+<meta name="twitter:description" content="1. GitHub 项目添加 README.md2. 添加 favicon.ico3. 在主页中只显示摘要4. 自定义部署到 GitHub 的 commit 信息5. 添加文章 tags6. 添加图片7. 博客站内链接跳转8. Hexo 大小写问题">
   
     <link rel="alternate" href="/atom.xml" title="py&#39;s blog" type="application/atom+xml">
   
@@ -107,7 +107,7 @@
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="#1-github-项目添加-readme-md">1. GitHub 项目添加 README.md</a><br><a href="#2-添加-favicon-ico">2. 添加 favicon.ico</a><br><a href="#3-在主页中只显示摘要">3. 在主页中只显示摘要</a><br><a href="#4-自定义部署到-GitHub-的-commit-信息">4. 自定义部署到 GitHub 的 commit 信息</a><br><a href="#5-添加文章-tags">5. 添加文章 tags</a><br><a href="#6-添加图片">6. 添加图片</a><br><a href="#7-博客站内链接跳转">7. 博客站内链接跳转</a></p>
+        <p><a href="#1-GitHub-项目添加-README-md">1. GitHub 项目添加 README.md</a><br><a href="#2-添加-favicon-ico">2. 添加 favicon.ico</a><br><a href="#3-在主页中只显示摘要">3. 在主页中只显示摘要</a><br><a href="#4-自定义部署到-GitHub-的-commit-信息">4. 自定义部署到 GitHub 的 commit 信息</a><br><a href="#5-添加文章-tags">5. 添加文章 tags</a><br><a href="#6-添加图片">6. 添加图片</a><br><a href="#7-博客站内链接跳转">7. 博客站内链接跳转</a><br><a href="#8-Hexo-大小写问题">8. Hexo 大小写问题</a></p>
 <a id="more"></a>
 <h2 id="0-前置"><a href="#0-前置" class="headerlink" title="0. 前置"></a>0. 前置</h2>
 <h2 id="1-GitHub-项目添加-README-md"><a href="#1-GitHub-项目添加-README-md" class="headerlink" title="1. GitHub 项目添加 README.md"></a>1. GitHub 项目添加 README.md</h2><p>问题：<br>在将本地的站点部署到 Github 时会删除原项目下的 README.md。  </p>
@@ -137,7 +137,7 @@
 <p>解决：<br>在摘要和正文间添加： <code>&lt;!-- more --&gt;</code></p>
 <p>参考：<br><a href="https://ohmyarch.github.io/2014/12/24/Hexo%E4%B8%BB%E9%A1%B5%E6%98%BE%E7%A4%BA%E6%91%98%E8%A6%81/" target="_blank" rel="noopener">Hexo主页显示摘要</a></p>
 <h2 id="4-自定义部署到-GitHub-的-commit-信息"><a href="#4-自定义部署到-GitHub-的-commit-信息" class="headerlink" title="4. 自定义部署到 GitHub 的 commit 信息"></a>4. 自定义部署到 GitHub 的 commit 信息</h2><p>问题：<br>在使用 <code>hexo d</code> 部署到 GitHub 上时，默认的 commit 信息只带有时间。</p>
-<p>解决：<br>在 <code>hexo d</code> 时,添加 <code>--message</code>，即:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo d --message <span class="string">"your message"</span></span></span><br></pre></td></tr></table></figure></p>
+<p>解决：<br>在 <code>hexo d</code> 时,添加 <code>--message</code>，即:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo d --message "your message"</span><br></pre></td></tr></table></figure></p>
 <p>参考：<br><a href="https://segmentfault.com/q/1010000007139908" target="_blank" rel="noopener">hexo 部署到 github 的时候可以动态添加 commit 的 message 吗</a></p>
 <h2 id="5-添加文章-tags"><a href="#5-添加文章-tags" class="headerlink" title="5. 添加文章 tags"></a>5. 添加文章 tags</h2><p>问题：<br>在部署文件时添加 tags，便于查找。</p>
 <p>解决：<br>在目标文章的 md 文件中添加：<code>tags: [tag1, tag2, tag3]</code></p>
@@ -154,7 +154,7 @@
 <ul>
 <li>修改 <code>_config.yml</code>，设置 <code>post_asset_folder</code> 为 true，会在 <code>_posts</code> 目录下生成与 md 文件同名的文件夹</li>
 <li><p>执行：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install https://github.com/CodeFalling/hexo-asset-image --save</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在上述生成的文件夹中添加图片，通过 <code>![sample](sample.jpg)</code> 访问</p>
 </li>
@@ -171,7 +171,21 @@
 <p>解决：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link 文件名（不要后缀） <span class="string">"标题（可选）"</span> %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>如果想跳转的文件名为 <code>hello-world.md</code>，则可以写为：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link hello-world <span class="string">"你好世界"</span> %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>参考：<br><a href="https://www.zhihu.com/question/48490384" target="_blank" rel="noopener">markdown 编写的 hexo 博客文章内部怎么跳转？</a></p>
-<h2 id="8-未完待续"><a href="#8-未完待续" class="headerlink" title="8. 未完待续"></a>8. 未完待续</h2>
+<h2 id="8-Hexo-大小写问题"><a href="#8-Hexo-大小写问题" class="headerlink" title="8. Hexo 大小写问题"></a>8. Hexo 大小写问题</h2><p>问题：<br>当在本地改变 md 文件的大小写时，部署到 GitHub 上后，改变了文件名的博客不能被访问。</p>
+<p>原因：<br>Hexo 默认的 git 操作会忽略大小写。</p>
+<p>解决：</p>
+<ol>
+<li>修改根目录下 .deploy_git/.git/config 文件，将 ignorecase 的值由 true 改为 false</li>
+<li>删除 .deploy_git 目录下除 .git 目录外的其他文件</li>
+<li><p>cd 到 .deploy_git 目录下，手动做一次推送</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m "delete all hexo generated files"</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新生成并部署</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>参考：<br><a href="http://www.wuliaole.com/post/correct_hexo_404_by_ignorecase/" target="_blank" rel="noopener">Hexo大小写引起的404问题</a></p>
+<h2 id="9-未完待续"><a href="#9-未完待续" class="headerlink" title="9. 未完待续"></a>9. 未完待续</h2>
       
     </div>
 
@@ -181,7 +195,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="https://perphyyoung.github.io/2018/09/27/hexo-faq/" data-id="cjnh3ddmg0003dwwiksd0jrs0" class="article-share-link">
+      <a data-url="https://perphyyoung.github.io/2018/09/27/hexo-faq/" data-id="cjnh4304600030gwiq5pc7ipw" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
