@@ -137,7 +137,7 @@
 <p>解决：<br>在摘要和正文间添加： <code>&lt;!-- more --&gt;</code></p>
 <p>参考：<br><a href="https://ohmyarch.github.io/2014/12/24/Hexo%E4%B8%BB%E9%A1%B5%E6%98%BE%E7%A4%BA%E6%91%98%E8%A6%81/" target="_blank" rel="noopener">Hexo主页显示摘要</a></p>
 <h2 id="4-自定义部署到-GitHub-的-commit-信息"><a href="#4-自定义部署到-GitHub-的-commit-信息" class="headerlink" title="4. 自定义部署到 GitHub 的 commit 信息"></a>4. 自定义部署到 GitHub 的 commit 信息</h2><p>问题：<br>在使用 <code>hexo d</code> 部署到 GitHub 上时，默认的 commit 信息只带有时间。</p>
-<p>解决：<br>在 <code>hexo d</code> 时,添加 <code>--message</code>，即:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo d --message <span class="string">"your message"</span></span></span><br></pre></td></tr></table></figure></p>
+<p>解决：<br>在 <code>hexo d</code> 时,添加 <code>--message</code>，即:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo d --message "your message"</span><br></pre></td></tr></table></figure></p>
 <p>参考：<br><a href="https://segmentfault.com/q/1010000007139908" target="_blank" rel="noopener">hexo 部署到 github 的时候可以动态添加 commit 的 message 吗</a></p>
 <h2 id="5-添加文章-tags"><a href="#5-添加文章-tags" class="headerlink" title="5. 添加文章 tags"></a>5. 添加文章 tags</h2><p>问题：<br>在部署文件时添加 tags，便于查找。</p>
 <p>解决：<br>在目标文章的 md 文件中添加：<code>tags: [tag1, tag2, tag3]</code></p>
@@ -154,7 +154,7 @@
 <ul>
 <li>修改 <code>_config.yml</code>，设置 <code>post_asset_folder</code> 为 true，会在 <code>_posts</code> 目录下生成与 md 文件同名的文件夹</li>
 <li><p>执行：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install https://github.com/CodeFalling/hexo-asset-image --save</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在上述生成的文件夹中添加图片，通过 <code>![sample](sample.jpg)</code> 访问</p>
 </li>
@@ -181,7 +181,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="https://perphyyoung.github.io/2018/09/27/hexo-faq/" data-id="cjnh1zflb0003ccwilkawrorx" class="article-share-link">
+      <a data-url="https://perphyyoung.github.io/2018/09/27/hexo-faq/" data-id="cjnh35gq5000118wiw00ts0h7" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
