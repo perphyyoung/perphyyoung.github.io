@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo 常见问题 | py&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1. GitHub 项目添加 README.md2. 添加 favicon.ico3. 在主页中只显示摘要4. 自定义部署到 GitHub 的 commit 信息5. 添加文章 tags6. 添加图片7. 博客站内链接跳转">
+<meta name="keywords" content="Hexo,blog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 常见问题">
+<meta property="og:url" content="https://perphyyoung.github.io/2018/09/27/hexo-faq/index.html">
+<meta property="og:site_name" content="py&#39;s blog">
+<meta property="og:description" content="1. GitHub 项目添加 README.md2. 添加 favicon.ico3. 在主页中只显示摘要4. 自定义部署到 GitHub 的 commit 信息5. 添加文章 tags6. 添加图片7. 博客站内链接跳转">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-27T12:20:08.543Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo 常见问题">
+<meta name="twitter:description" content="1. GitHub 项目添加 README.md2. 添加 favicon.ico3. 在主页中只显示摘要4. 自定义部署到 GitHub 的 commit 信息5. 添加文章 tags6. 添加图片7. 博客站内链接跳转">
+  
+    <link rel="alternate" href="/atom.xml" title="py&#39;s blog" type="application/atom+xml">
+  
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu-navbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a class=""
+                 href="/index.html">Home</a></li>
+        
+          <li><a class=""
+                 href="/archives/">Archives</a></li>
+        
+      </ul>
+
+      <!--
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+      -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="container">
+    <div class="blog-header">
+  <h1 class="blog-title">py&#39;s blog</h1>
+  
+    <p class="lead blog-description">sh∅ut</p>
+  
+</div>
+
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+          <article id="post-hexo-faq" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo 常见问题
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2018/09/27/hexo-faq/" class="article-date"><time datetime="2018-09-27T05:53:39.000Z" itemprop="datePublished">2018-09-27</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="#1-github-项目添加-readme-md">1. GitHub 项目添加 README.md</a><br><a href="#2-添加-favicon-ico">2. 添加 favicon.ico</a><br><a href="#3-在主页中只显示摘要">3. 在主页中只显示摘要</a><br><a href="#4-自定义部署到-GitHub-的-commit-信息">4. 自定义部署到 GitHub 的 commit 信息</a><br><a href="#5-添加文章-tags">5. 添加文章 tags</a><br><a href="#6-添加图片">6. 添加图片</a><br><a href="#7-博客站内链接跳转">7. 博客站内链接跳转</a></p>
+<a id="more"></a>
+<h2 id="0-前置"><a href="#0-前置" class="headerlink" title="0. 前置"></a>0. 前置</h2>
+<h2 id="1-GitHub-项目添加-README-md"><a href="#1-GitHub-项目添加-README-md" class="headerlink" title="1. GitHub 项目添加 README.md"></a>1. GitHub 项目添加 README.md</h2><p>问题：<br>在将本地的站点部署到 Github 时会删除原项目下的 README.md。  </p>
+<p>解决：  </p>
+<ol>
+<li>将 README.md 置于 <code>blog/source</code> 目录下</li>
+<li>修改 <code>blog/_config.yml</code>，找到 <code>skip_render</code> 字段，更改为： <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">skip_render:</span> <span class="string">README.md</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>参考：<br><a href="Hexo渲染时排除部分文件或目录">Hexo渲染时排除部分文件或目录</a></p>
+<h2 id="2-添加-favicon-ico"><a href="#2-添加-favicon-ico" class="headerlink" title="2. 添加 favicon.ico"></a>2. 添加 favicon.ico</h2><p>问题：<br>默认情况下，在网页的标签栏显示的 favicon.ico 为空白。</p>
+<p>解决：</p>
+<ol>
+<li>制作 ico 图标，建议尺寸 48*48，命名为 favicon.icon</li>
+<li><p>将图标置于 <code>blog/source</code> 目录下，修改 <code>blog/_config.yml</code></p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">favicon:</span> <span class="string">/favicon.ico</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在本地应该是可以马上呈现，在 GitHub 网址上比较慢，耐心等待</p>
+</li>
+</ol>
+<p>参考：</p>
+<ol>
+<li><a href="https://www.zhihu.com/question/39512422" target="_blank" rel="noopener">Hexo搭建的个人博客，怎么显示网站的 favicon.ico？</a></li>
+<li><a href="http://ico.duduxuexi.com/" target="_blank" rel="noopener">在线生成透明 ICO 图标</a></li>
+</ol>
+<h2 id="3-在主页中只显示摘要"><a href="#3-在主页中只显示摘要" class="headerlink" title="3. 在主页中只显示摘要"></a>3. 在主页中只显示摘要</h2><p>问题：<br>默认情况下，会在主页显示很多信息。</p>
+<p>解决：<br>在摘要和正文间添加： <code>&lt;!-- more --&gt;</code></p>
+<p>参考：<br><a href="https://ohmyarch.github.io/2014/12/24/Hexo%E4%B8%BB%E9%A1%B5%E6%98%BE%E7%A4%BA%E6%91%98%E8%A6%81/" target="_blank" rel="noopener">Hexo主页显示摘要</a></p>
+<h2 id="4-自定义部署到-GitHub-的-commit-信息"><a href="#4-自定义部署到-GitHub-的-commit-信息" class="headerlink" title="4. 自定义部署到 GitHub 的 commit 信息"></a>4. 自定义部署到 GitHub 的 commit 信息</h2><p>问题：<br>在使用 <code>hexo d</code> 部署到 GitHub 上时，默认的 commit 信息只带有时间。</p>
+<p>解决：<br>在 <code>hexo d</code> 时,添加 <code>--message</code>，即:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo d --message <span class="string">"your message"</span></span></span><br></pre></td></tr></table></figure></p>
+<p>参考：<br><a href="https://segmentfault.com/q/1010000007139908" target="_blank" rel="noopener">hexo 部署到 github 的时候可以动态添加 commit 的 message 吗</a></p>
+<h2 id="5-添加文章-tags"><a href="#5-添加文章-tags" class="headerlink" title="5. 添加文章 tags"></a>5. 添加文章 tags</h2><p>问题：<br>在部署文件时添加 tags，便于查找。</p>
+<p>解决：<br>在目标文章的 md 文件中添加：<code>tags: [tag1, tag2, tag3]</code></p>
+<p>参考：<br><a href="https://segmentfault.com/q/1010000002561642" target="_blank" rel="noopener">hexo 分类与 tags 配置</a></p>
+<h2 id="6-添加图片"><a href="#6-添加图片" class="headerlink" title="6. 添加图片"></a>6. 添加图片</h2><p>问题：<br>在文章中添加图片</p>
+<p>解决：  </p>
+<ol>
+<li>少量图片<ul>
+<li>将图片置于 <code>source/images</code> 目录下</li>
+<li>通过 <code>![sample](images/sample.jpg)</code> 访问</li>
+</ul>
+</li>
+<li><p>文章资源文件夹</p>
+<ul>
+<li>修改 <code>_config.yml</code>，设置 <code>post_asset_folder</code> 为 true，会在 <code>_posts</code> 目录下生成与 md 文件同名的文件夹</li>
+<li><p>执行：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install https://github.com/CodeFalling/hexo-asset-image --save</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在上述生成的文件夹中添加图片，通过 <code>![sample](sample.jpg)</code> 访问</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>参考：  </p>
+<ol>
+<li><a href="https://hexo.io/zh-cn/docs/asset-folders" target="_blank" rel="noopener">Hexo 资源文件夹</a></li>
+<li><a href="https://www.jianshu.com/p/c2ba9533088a" target="_blank" rel="noopener">hexo 博客图片问题</a></li>
+<li><a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="noopener">https://github.com/CodeFalling/hexo-asset-image</a></li>
+</ol>
+<h2 id="7-博客站内链接跳转"><a href="#7-博客站内链接跳转" class="headerlink" title="7. 博客站内链接跳转"></a>7. 博客站内链接跳转</h2><p>问题：<br>以相对路径访问站内的其他文章</p>
+<p>解决：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link 文件名（不要后缀） <span class="string">"标题（可选）"</span> %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果想跳转的文件名为 <code>hello-world.md</code>，则可以写为：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link hello-world <span class="string">"你好世界"</span> %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>参考：<br><a href="https://www.zhihu.com/question/48490384" target="_blank" rel="noopener">markdown 编写的 hexo 博客文章内部怎么跳转？</a></p>
+<h2 id="8-未完待续"><a href="#8-未完待续" class="headerlink" title="8. 未完待续"></a>8. 未完待续</h2>
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="https://perphyyoung.github.io/2018/09/27/hexo-faq/" data-id="cjnh3ddmg0003dwwiksd0jrs0" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
+  
+  <li role="presentation">
+    <a href="/2018/09/27/hexo-plus-github-make-your-own-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">Hexo + GitHub, make your own blog</span>
+    </a>
+  </li>
+  
+  
+  <li role="presentation">
+    <a href="/2018/10/02/image-dataset/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">Image dataset</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
+  
+</ul>
+
+
+  
+</article>
+
+
+
+
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+  <div class="sidebar-module sidebar-module-inset">
+  <h4>About</h4>
+  <p>Collection of my thoughts and code snippets.</p>
+
+</div>
+
+
+  
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tags</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DataSet/">DataSet</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GitHub/">GitHub</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Hexo/">Hexo</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Python/">Python</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/blog/">blog</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/choose/">choose</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/glob/">glob</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/list/">list</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/nodejs/">nodejs</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/switch/">switch</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ternary/">ternary</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/DataSet/" style="font-size: 10px;">DataSet</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Python/" style="font-size: 20px;">Python</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/choose/" style="font-size: 10px;">choose</a> <a href="/tags/glob/" style="font-size: 10px;">glob</a> <a href="/tags/list/" style="font-size: 10px;">list</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/switch/" style="font-size: 10px;">switch</a> <a href="/tags/ternary/" style="font-size: 10px;">ternary</a>
+    </p>
+  </div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Archives</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/10/">October 2018</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/09/">September 2018</a><span class="sidebar-module-list-count">4</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Recents</h4>
+    <ul class="sidebar-module-list">
+      
+        <li>
+          <a href="/2018/10/20/how-to-empty-a-list-in-python/">How to empty a list in Python</a>
+        </li>
+      
+        <li>
+          <a href="/2018/10/20/python-switch-statement/">Python switch statement</a>
+        </li>
+      
+        <li>
+          <a href="/2018/10/19/python-ternary-operator/">Python ternary operator</a>
+        </li>
+      
+        <li>
+          <a href="/2018/10/02/image-dataset/">Image dataset</a>
+        </li>
+      
+        <li>
+          <a href="/2018/09/27/hexo-faq/">Hexo 常见问题</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+        </div>
+    </div>
+  </div>
+  <footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      &copy; 2018 perphyyoung<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
